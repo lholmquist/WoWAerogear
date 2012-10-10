@@ -6,7 +6,7 @@ $( function() {
         url:url,
         contentType: 'application/json',
         dataType: 'jsonp',
-        jsonp: 'jsonp',
+        jsonp: 'customCallback',
         success: function( data ){
             console.log( data );
         }
