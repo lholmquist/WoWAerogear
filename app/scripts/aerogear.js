@@ -230,9 +230,11 @@ AeroGear.Core = function() {
             ajaxSettings = {
                 // use the pipeName as the default rest endpoint
                 url: settings.baseURL ? settings.baseURL + endpoint : endpoint,
+                //Modified version
                 jsonp :settings.jsonp ? "jsonp" : null,
                 dataType: settings.jsonp ? "jsonp" : "json",
                 jsonpCallback: ( settings.jsonp && settings.callback ) ? settings.callback : null
+                //End Modified Version
             },
             recordId = settings.recordId || "id",
             authenticator = settings.authenticator || null,
