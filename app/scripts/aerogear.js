@@ -1,4 +1,4 @@
-/*! AeroGear JavaScript Library - v1.0.0.Alpha - 2012-10-09
+/*! AeroGear JavaScript Library - v1.0.0.Alpha - 2012-10-11
 * https://github.com/aerogear/aerogear-js
 * JBoss, Home of Professional Open Source
 * Copyright 2012, Red Hat, Inc., and individual contributors
@@ -16,9 +16,19 @@
 
 var AeroGear = {};
 
+/**
+    AeroGear.Core is a base for all of the library modules to extend. It is not to be instantiated and will throw an error when attempted
+    @class
+    @private
+ */
 AeroGear.Core = function() {
+    // Prevent instantiation of this base class
+    if ( this instanceof AeroGear.Core ) {
+        throw "Invalid instantiation of base class AeroGear.Core";
+    }
+
     /**
-        This function is used internally by pipeline, datamanager, etc. to add a new Object (pipe, store, etc.) to the respective collection. For specific examples look at those internal use cases.
+        This function is used internally by pipeline, datamanager, etc. to add a new Object (pipe, store, etc.) to the respective collection.
         @method
         @param {String|Array|Object} config - This can be a variety of types specifying how to create the object
         @returns {Object} The object containing the collection that was updated
@@ -55,7 +65,7 @@ AeroGear.Core = function() {
         return this;
     };
     /**
-        This function is used internally by pipeline, datamanager, etc. to remove an Object (pipe, store, etc.) from the respective collection. For specific examples look at those internal use cases.
+        This function is used internally by pipeline, datamanager, etc. to remove an Object (pipe, store, etc.) from the respective collection.
         @method
         @param {String|String[]|Object[]|Object} config - This can be a variety of types specifying how to remove the object
         @returns {Object} The object containing the collection that was updated
@@ -94,6 +104,7 @@ AeroGear.Core = function() {
 (function( AeroGear, $, undefined ) {
     /**
         Wrapper utility around jQuery.ajax to preform some custom actions
+        @private
         @method
         @param {Object} caller - the AeroGear object (pipe, datamanager, etc.) that is calling AeroGear.ajax
         @param {Object} options - settings for jQuery.ajax
@@ -151,6 +162,7 @@ AeroGear.Core = function() {
 
     /**
         Utility function to test if an object is an Array
+        @private
         @method
         @param {Object} obj - This can be any object to test
      */
@@ -162,7 +174,8 @@ AeroGear.Core = function() {
 (function( AeroGear, $, undefined ) {
     /**
         The AeroGear.Pipeline provides a persistence API that is protocol agnostic and does not depend on any certain data model. Through the use of adapters, this library provides common methods like read, save and delete that will just work.
-        @constructs AeroGear.Pipeline
+        @class
+        @augments AeroGear.Core
         @param {String|Array|Object} [config] - A configuration for the pipe(s) being created along with the Pipeline. If an object or array containing objects is used, the objects can have the following properties:
         @param {String} config.name - the name that the pipe will later be referenced by
         @param {String} [config.type="rest"] - the type of pipe as determined by the adapter used
@@ -190,9 +203,16 @@ AeroGear.Core = function() {
 
         this.lib = "Pipeline";
         this.type = config ? config.type || "Rest" : "Rest";
+
+        /**
+            The name used to reference the collection of pipe instances created from the adapters
+            @memberOf AeroGear.Pipeline
+            @type Object
+            @default pipes
+         */
         this.collectionName = "pipes";
 
-        return this.add( config );
+        this.add( config );
     };
 
     AeroGear.Pipeline.prototype = AeroGear.Core;
@@ -215,6 +235,8 @@ AeroGear.Core = function() {
         @param {String} [settings.baseURL] - defines the base URL to use for an endpoint
         @param {String} [settings.endpoint=pipename] - overrides the default naming of the endpoint which uses the pipeName
         @param {String} [settings.recordId="id"] - the name of the field used to uniquely identify a "record" in the data
+        @param {Boolean} [settings.jsonp=false] - If true, this pipe will use jsonp
+        @param {String} [settings.callback] - when settings.jsonp == true, will override the jQuery jsonpCallback
         @returns {Object} The created pipe
      */
     AeroGear.Pipeline.adapters.Rest = function( pipeName, settings ) {
@@ -229,20 +251,25 @@ AeroGear.Core = function() {
         var endpoint = settings.endpoint || pipeName,
             ajaxSettings = {
                 // use the pipeName as the default rest endpoint
-                url: settings.baseURL ? settings.baseURL + endpoint : endpoint,
-                //Modified version
-                jsonp :settings.jsonp ? "jsonp" : null,
-                dataType: settings.jsonp ? "jsonp" : "json",
-                jsonpCallback: ( settings.jsonp && settings.callback ) ? settings.callback : null
-                //End Modified Version
+                url: settings.baseURL ? settings.baseURL + endpoint : endpoint
             },
             recordId = settings.recordId || "id",
             authenticator = settings.authenticator || null,
             type = "Rest";
 
+            if( settings.jsonp ) {
+                ajaxSettings.jsonp = "jsonp",
+                ajaxSettings.dataType = "jsonp";
+
+                if( settings.callback ) {
+                    ajaxSettings.jsonpCallback = settings.callback;
+                }
+            }
+
         // Privileged Methods
         /**
             Return whether or not the client should consider itself authenticated. Of course, the server may have removed access so that will have to be handled when a request is made
+            @private
             @augments Rest
             @returns {Boolean}
          */
@@ -252,6 +279,7 @@ AeroGear.Core = function() {
 
         /**
             Adds the auth token to the headers and returns the modified version of the settings
+            @private
             @augments Rest
             @param {Object} settings - the settings object that will have the auth identifier added
             @returns {Object} Settings extended with auth identifier
@@ -262,6 +290,7 @@ AeroGear.Core = function() {
 
         /**
             Removes the stored token effectively telling the client it must re-authenticate with the server
+            @private
             @augments Rest
          */
         this.deauthorize = function() {
@@ -272,6 +301,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private ajaxSettings var
+            @private
             @augments Rest
             @returns {Object}
          */
@@ -281,20 +311,12 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private recordId var
+            @private
             @augments Rest
             @returns {String}
          */
         this.getRecordId = function() {
             return recordId;
-        };
-
-        /**
-            Returns the value of the private authenticator var
-            @augments Rest
-            @returns {Object}
-         */
-        this.getAuthenticator = function() {
-            return authenticator;
         };
     };
 
@@ -304,8 +326,9 @@ AeroGear.Core = function() {
         @param {Object} [options={}] - Additional options
         @param {Function} [options.complete] - a callback to be called when the result of the request to the server is complete, regardless of success
         @param {Object} [options.data] - a hash of key/value pairs that can be passed to the server as additional information for use when determining what data to return
+        @param {Object} [options.id] - the value to append to the endpoint URL,  should be the same as the pipelines recordId
         @param {Function} [options.error] - a callback to be called when the request to the server results in an error
-        @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the jQuery.ajax page (http://api.jquery.com/jQuery.ajax/).
+        @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the <a href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax page</a>.
         @param {Function} [options.success] - a callback to be called when the result of the request to the server is successful
         @returns {Object} A deferred implementing the promise interface similar to the jqXHR created by jQuery.ajax
         @example
@@ -326,9 +349,23 @@ AeroGear.Core = function() {
         });
      */
     AeroGear.Pipeline.adapters.Rest.prototype.read = function( options ) {
-        options = options || {};
         var that = this,
-            success = function( data ) {
+            recordId = this.getRecordId(),
+            ajaxSettings = this.getAjaxSettings(),
+            url,
+            success,
+            error,
+            extraOptions;
+
+        options = options || {};
+
+        if ( options[ recordId ] ) {
+            url = ajaxSettings.url + "/" + options[ recordId ];
+        } else {
+            url = ajaxSettings.url;
+        }
+
+        success = function( data ) {
             var stores = options.stores ? AeroGear.isArray( options.stores ) ? options.stores : [ options.stores ] : [],
                 item;
 
@@ -341,7 +378,7 @@ AeroGear.Core = function() {
             if ( options.success ) {
                 options.success.apply( this, arguments );
             }
-        },
+        };
         error = function( type, errorMessage ) {
             var stores = options.stores ? that.isArray( options.stores ) ? options.stores : [ options.stores ] : [],
                 item;
@@ -356,11 +393,12 @@ AeroGear.Core = function() {
             if ( options.error ) {
                 options.error.apply( this, arguments );
             }
-        },
+        };
         extraOptions = {
             type: "GET",
             success: success,
             error: error,
+            url: url,
             statusCode: options.statusCode,
             complete: options.complete
         };
@@ -374,7 +412,7 @@ AeroGear.Core = function() {
         @param {Object} [options={}] - Additional options
         @param {Function} [options.complete] - a callback to be called when the result of the request to the server is complete, regardless of success
         @param {Function} [options.error] - a callback to be called when the request to the server results in an error
-        @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the jQuery.ajax page (http://api.jquery.com/jQuery.ajax/).
+        @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the <a href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax page</a>.
         @param {Function} [options.success] - a callback to be called when the result of the request to the server is successful
         @param {Object|Array} [options.stores] - A single store object or array of stores to be updated when a server update is successful
         @returns {Object} A deferred implementing the promise interface similar to the jqXHR created by jQuery.ajax
@@ -413,7 +451,10 @@ AeroGear.Core = function() {
             recordId = this.getRecordId(),
             ajaxSettings = this.getAjaxSettings(),
             type,
-            url;
+            url,
+            success,
+            error,
+            extraOptions;
 
         data = data || {};
         options = options || {};
@@ -425,7 +466,7 @@ AeroGear.Core = function() {
             url = ajaxSettings.url;
         }
 
-        var success = function( data ) {
+        success = function( data ) {
             var stores = AeroGear.isArray( options.stores ) ? options.stores : [ options.stores ],
                 item;
 
@@ -438,7 +479,7 @@ AeroGear.Core = function() {
             if ( options.success ) {
                 options.success.apply( this, arguments );
             }
-        },
+        };
         error = function( type, errorMessage ) {
             var stores = options.stores ? AeroGear.isArray( options.stores ) ? options.stores : [ options.stores ] : [],
                 item;
@@ -453,7 +494,7 @@ AeroGear.Core = function() {
             if ( options.error ) {
                 options.error.apply( this, arguments );
             }
-        },
+        };
         extraOptions = {
             data: data,
             type: type,
@@ -473,7 +514,7 @@ AeroGear.Core = function() {
         @param {Object} [options={}] - Additional options
         @param {Function} [options.complete] - a callback to be called when the result of the request to the server is complete, regardless of success
         @param {Function} [options.error] - a callback to be called when the request to the server results in an error
-        @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the jQuery.ajax page (http://api.jquery.com/jQuery.ajax/).
+        @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the <a href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax page</a>.
         @param {Function} [options.success] - a callback to be called when the result of the request to the server is successful
         @param {Object|Array} [options.stores] - A single store object or array of stores to be updated when a server update is successful
         @returns {Object} A deferred implementing the promise interface similar to the jqXHR created by jQuery.ajax
@@ -512,7 +553,10 @@ AeroGear.Core = function() {
             ajaxSettings = this.getAjaxSettings(),
             delPath = "",
             delId,
-            url;
+            url,
+            success,
+            error,
+            extraOptions;
 
         if ( typeof toRemove === "string" || typeof toRemove === "number" ) {
             delId = toRemove;
@@ -528,7 +572,7 @@ AeroGear.Core = function() {
         delPath = delId ? "/" + delId : "";
         url = ajaxSettings.url + delPath;
 
-        var success = function( data ) {
+        success = function( data ) {
             var stores,
                 item;
 
@@ -542,7 +586,7 @@ AeroGear.Core = function() {
             if ( options.success ) {
                 options.success.apply( this, arguments );
             }
-        },
+        };
         error = function( type, errorMessage ) {
             var stores = options.stores ? AeroGear.isArray( options.stores ) ? options.stores : [ options.stores ] : [],
                 item;
@@ -557,7 +601,7 @@ AeroGear.Core = function() {
             if ( options.error ) {
                 options.error.apply( this, arguments );
             }
-        },
+        };
         extraOptions = {
             type: "DELETE",
             url: url,
@@ -574,7 +618,8 @@ AeroGear.Core = function() {
 (function( AeroGear, $, undefined ) {
     /**
         A collection of data connections (stores) and their corresponding data models. This object provides a standard way to interact with client side data no matter the data format or storage mechanism used.
-        @constructs AeroGear.DataManager
+        @class
+        @augments AeroGear.Core
         @param {String|Array|Object} [config] - A configuration for the store(s) being created along with the DataManager. If an object or array containing objects is used, the objects can have the following properties:
         @param {String} config.name - the name that the store will later be referenced by
         @param {String} [config.type="memory"] - the type of store as determined by the adapter used
@@ -602,9 +647,16 @@ AeroGear.Core = function() {
 
         this.lib = "DataManager";
         this.type = config ? config.type || "Memory" : "Memory";
+
+        /**
+            The name used to reference the collection of data store instances created from the adapters
+            @memberOf AeroGear.DataManager
+            @type Object
+            @default stores
+         */
         this.collectionName = "stores";
 
-        return this.add( config );
+        this.add( config );
     };
 
     AeroGear.DataManager.prototype = AeroGear.Core;
@@ -615,15 +667,21 @@ AeroGear.Core = function() {
         @augments AeroGear.DataManager
      */
     AeroGear.DataManager.adapters = {};
+
+    // Constants
+    AeroGear.DataManager.STATUS_NEW = 1;
+    AeroGear.DataManager.STATUS_MODIFIED = 2;
+    AeroGear.DataManager.STATUS_REMOVED = 0;
 })( AeroGear, jQuery );
 
-(function( AeroGear, $, undefined ) {
+(function( AeroGear, $, uuid, undefined ) {
     /**
         The Memory adapter is the default type used when creating a new store. Data is simply stored in a data var and is lost on unload (close window, leave page, etc.)
         @constructs AeroGear.DataManager.adapters.Memory
         @param {String} storeName - the name used to reference this particular store
         @param {Object} [settings={}] - the settings to be passed to the adapter
         @param {String} [settings.recordId="id"] - the name of the field used to uniquely identify a "record" in the data
+        @param {Boolean} [settings.dataSync=false] - if true, any pipes associated with this store will attempt to keep the data in sync with the server (coming soon)
         @returns {Object} The created store
      */
     AeroGear.DataManager.adapters.Memory = function( storeName, settings ) {
@@ -637,11 +695,13 @@ AeroGear.Core = function() {
         // Private Instance vars
         var recordId = settings.recordId ? settings.recordId : "id",
             type = "Memory",
-            data = null;
+            data = null,
+            dataSync = !!settings.dataSync;
 
         // Privileged Methods
         /**
             Returns the value of the private recordId var
+            @private
             @augments Memory
             @returns {String}
          */
@@ -650,36 +710,106 @@ AeroGear.Core = function() {
         };
 
         /**
-            Returns the value of the private data var
+            Returns the value of the private data var, filtered by sync status if necessary
+            @private
             @augments Memory
+            @param {Boolean} [dataSyncBypass] - get all data no matter it's sync status
             @returns {Array}
          */
-        this.getData = function() {
-            return data;
+        this.getData = function( dataSyncBypass ) {
+            var activeData = [],
+                item,
+                syncStatus;
+
+            if ( dataSync && !dataSyncBypass ) {
+                for ( item in data ) {
+                    syncStatus = data[ item ][ "ag-sync-status" ];
+                    if ( syncStatus !== AeroGear.DataManager.STATUS_REMOVED ) {
+                        activeData.push( data[ item ] );
+                    }
+                }
+                return activeData;
+            } else {
+                return data;
+            }
         };
 
         /**
             Sets the value of the private data var
+            @private
             @augments Memory
          */
         this.setData = function( newData ) {
+            if ( dataSync ) {
+                for ( var item in newData ) {
+                    newData[ item ][ "ag-sync-status" ] = AeroGear.DataManager.STATUS_NEW;
+                }
+            }
             data = newData;
         };
 
         /**
+            Empties the value of the private data var
+            @private
+            @augments Memory
+         */
+        this.emptyData = function() {
+            if ( dataSync ) {
+                for ( var item in data ) {
+                    data[ item ][ "ag-sync-status" ] = AeroGear.DataManager.STATUS_REMOVED;
+                }
+            } else {
+                data = null;
+            }
+        };
+
+        /**
             Adds a record to the store's data set
+            @private
             @augments Memory
          */
         this.addDataRecord = function( record ) {
+            data = data || [];
+            if ( dataSync ) {
+                record[ "ag-sync-status" ] = AeroGear.DataManager.STATUS_NEW;
+                record.id = record.id || uuid.v4();
+            }
             data.push( record );
         };
 
         /**
-            Removes a single record from the store's data set
+            Adds a record to the store's data set
+            @private
             @augments Memory
          */
-        this.removeDataRecord = function( record ) {
-            data.splice( record, 1 );
+        this.updateDataRecord = function( index, record ) {
+            if ( dataSync ) {
+                record[ "ag-sync-status" ] = AeroGear.DataManager.STATUS_MODIFIED;
+            }
+            data[ index ] = record;
+        };
+
+        /**
+            Removes a single record from the store's data set
+            @private
+            @augments Memory
+         */
+        this.removeDataRecord = function( index ) {
+            if ( dataSync ) {
+                data[ index ][ "ag-sync-status" ] = AeroGear.DataManager.STATUS_REMOVED;
+            } else {
+                data.splice( index, 1 );
+            }
+        };
+
+        /**
+            Returns the value of the private dataSync var
+            @private
+            @augments Memory
+            @returns {Boolean}
+         */
+        this.getDataSync = function() {
+            return dataSync;
         };
     };
 
@@ -713,7 +843,7 @@ AeroGear.Core = function() {
                 for ( var i = 0; i < data.length; i++ ) {
                     for( var item in this.getData() ) {
                         if ( this.getData()[ item ][ this.getRecordId() ] === data[ i ][ this.getRecordId() ] ) {
-                            this.getData()[ item ] = data[ i ];
+                            this.updateDataRecord( item, data[ i ] );
                             itemFound = true;
                             break;
                         }
@@ -740,12 +870,13 @@ AeroGear.Core = function() {
     AeroGear.DataManager.adapters.Memory.prototype.remove = function( toRemove ) {
         if ( !toRemove ) {
             // empty data array and return
-            this.setData( [] );
+            this.emptyData();
             return this.getData();
         } else {
             toRemove = AeroGear.isArray( toRemove ) ? toRemove : [ toRemove ];
         }
         var delId,
+            data,
             item;
 
         for ( var i = 0; i < toRemove.length; i++ ) {
@@ -758,8 +889,9 @@ AeroGear.Core = function() {
                 continue;
             }
 
-            for( item in this.getData() ) {
-                if ( this.getData()[ item ][ this.getRecordId() ] === delId ) {
+            data = this.getData( true );
+            for( item in data ) {
+                if ( data[ item ][ this.getRecordId() ] === delId ) {
                     this.removeDataRecord( item );
                 }
             }
@@ -873,17 +1005,18 @@ AeroGear.Core = function() {
 
         return filtered;
     };
-})( AeroGear, jQuery );
+})( AeroGear, jQuery, window.uuid );
 
 (function( AeroGear, $, undefined ) {
     /**
         The AeroGear.Auth namespace provides an authentication and enrollment API. Through the use of adapters, this library provides common methods like enroll, login and logout that will just work.
-        @constructs AeroGear.Auth
+        @class
+        @augments AeroGear.Core
         @param {String|Array|Object} [config] - A configuration for the modules(s) being created along with the authenticator. If an object or array containing objects is used, the objects can have the following properties:
         @param {String} config.name - the name that the module will later be referenced by
         @param {String} [config.type="rest"] - the type of module as determined by the adapter used
         @param {Object} [config.settings={}] - the settings to be passed to the adapter
-        @returns {Object} auth - The created authenticator containing any auth modules that may have been created
+        @returns {Object} The created authenticator containing any auth modules that may have been created
         @example
         // Create an empty authenticator
         var auth = AeroGear.Auth();
@@ -904,9 +1037,16 @@ AeroGear.Core = function() {
 
         this.lib = "Auth";
         this.type = config ? config.type || "Rest" : "Rest";
+
+        /**
+            The name used to reference the collection of authentication module instances created from the adapters
+            @memberOf AeroGear.Auth
+            @type Object
+            @default modules
+         */
         this.collectionName = "modules";
 
-        return this.add( config );
+        this.add( config );
     };
 
     AeroGear.Auth.prototype = AeroGear.Core;
@@ -925,8 +1065,10 @@ AeroGear.Core = function() {
         @constructs AeroGear.Auth.adapters.Rest
         @param {String} moduleName - the name used to reference this particular auth module
         @param {Object} [settings={}] - the settings to be passed to the adapter
-        @param {Object} [settings.endpoints={}] - a set of REST endpoints that correspond to the different public methods including enroll, login and logout
+        @param {Boolean} [settings.agAuth] - True if this adapter should use AeroGear's token based authentication model
         @param {String} [settings.baseURL] - defines the base URL to use for an endpoint
+        @param {Object} [settings.endpoints={}] - a set of REST endpoints that correspond to the different public methods including enroll, login and logout
+        @param {String} [settings.tokenName="Auth-Token"] - defines the name used for the token header when using agAuth
         @returns {Object} The created auth module
      */
     AeroGear.Auth.adapters.Rest = function( moduleName, settings ) {
@@ -948,6 +1090,7 @@ AeroGear.Core = function() {
         // Privileged methods
         /**
             Return whether or not the client should consider itself authenticated. Of course, the server may have removed access so that will have to be handled when a request is made
+            @private
             @augments Rest
             @returns {Boolean}
          */
@@ -962,6 +1105,7 @@ AeroGear.Core = function() {
 
         /**
             Adds the auth token to the headers and returns the modified version of the settings
+            @private
             @augments Rest
             @param {Object} settings - the settings object that will have the auth identifier added
             @returns {Object} Settings extended with auth identifier
@@ -974,6 +1118,7 @@ AeroGear.Core = function() {
 
         /**
             Removes the stored token effectively telling the client it must re-authenticate with the server
+            @private
             @augments Rest
          */
         this.deauthorize = function() {
@@ -983,6 +1128,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private settings var
+            @private
             @augments Rest
          */
         this.getSettings = function() {
@@ -992,6 +1138,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private settings var
+            @private
             @augments Rest
          */
         this.getEndpoints = function() {
@@ -1000,6 +1147,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private name var
+            @private
             @augments Rest
          */
         this.getName = function() {
@@ -1008,6 +1156,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private agAuth var which determines whether or not the AeroGear style authentication token should be used
+            @private
             @augments Rest
          */
         this.getAGAuth = function() {
@@ -1016,6 +1165,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private baseURL var
+            @private
             @augments Rest
          */
         this.getBaseURL = function() {
@@ -1024,6 +1174,7 @@ AeroGear.Core = function() {
 
         /**
             Returns the value of the private tokenName var
+            @private
             @augments Rest
          */
         this.getTokenName = function() {
