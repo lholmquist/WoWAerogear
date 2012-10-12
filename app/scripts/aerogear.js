@@ -258,14 +258,13 @@ AeroGear.Core = function() {
             type = "Rest";
 
             if( settings.jsonp ) {
-                ajaxSettings.jsonp = "jsonp",
-                ajaxSettings.dataType = "jsonp";
+                ajaxSettings.dataType = "jsonp",
+                ajaxSettings.jsonp = settings.jsonp.jsonp ? settings.jsonp.jsonp : "callback";
 
-                if( settings.callback ) {
+                if( settings.jsonp.callback ) {
                     ajaxSettings.jsonpCallback = settings.callback;
                 }
             }
-
         // Privileged Methods
         /**
             Return whether or not the client should consider itself authenticated. Of course, the server may have removed access so that will have to be handled when a request is made
