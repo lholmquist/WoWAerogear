@@ -1,5 +1,5 @@
 $( function() {
-    var url = "http://us.battle.net/api/wow/achievement/2144",
+    var url = "http://us.battle.net/api/wow/achievement/2",
         baseURL = "http://us.battle.net/api/wow/";
 
 //a jquery version for a baseline to make sure it worked
@@ -42,15 +42,30 @@ $( function() {
         success:function( data ) {
             updateRealmStatus();
         },
+        error:function( data ) {
+            console.log( data );
+        },
         stores: realmStatusStore
     });
 
 
     function updateRealmStatus() {
-        var realms = realmStatusStore.getData()[ 0 ];
+        realmStatusStore.save(realmStatusStore.read()[ 0 ].realms,true);
+        //did the above because datamanger can't filter beyond one layer yet
         var outsideList = $( "#realms" );
-        _.each( realms.realms, function( realm ) {
-            $( "<li>" ).append( "Realm Name:" + realm.name + "Realm Status:" + realm.status ).appendTo( outsideList );
+        _.each( realmStatusStore.read(), function( realm ) {
+            buildTable( realm ).appendTo( outsideList );
         });
+    }
+
+    function buildTable( realm ) {
+        var row = $( "<tr>" );
+
+        row.append( $( "<td>" ).append( $( "<span>" ).append( realm.status ? "Up" : "Down" ).addClass( "label" ).addClass( realm.status ? "label-success" : "label-important" ) ) );
+        row.append( $( "<td>" ).append( realm.name ) );
+        row.append( $( "<td>" ).append( realm.type ) );
+        row.append( $( "<td>" ).append( realm.population ) );
+
+        return row;
     }
 });
