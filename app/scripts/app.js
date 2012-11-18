@@ -23,11 +23,7 @@ $( function() {
             name: "realmStatus",
             settings: {
                 baseURL: baseURL,
-                endpoint: "realm/status",
-                jsonp: {
-                    jsonp: 'jsonp'
-                    //callback: 'customCallback'
-                }
+                endpoint: "realm/status"
             }
         }
     ]);

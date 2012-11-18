@@ -1,0 +1,5662 @@
+{
+    "realms": [
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265189327
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264104469
+            },
+            "status": true,
+            "name": "Aegwynn",
+            "slug": "aegwynn",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265099823
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264865072
+            },
+            "status": true,
+            "name": "Aerie Peak",
+            "slug": "aerie-peak",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265934400
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264911642
+            },
+            "status": true,
+            "name": "Agamaggan",
+            "slug": "agamaggan",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265794921
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264758167
+            },
+            "status": true,
+            "name": "Aggramar",
+            "slug": "aggramar",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265188539
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264071680
+            },
+            "status": true,
+            "name": "Akama",
+            "slug": "akama",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265698398
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264674560
+            },
+            "status": true,
+            "name": "Alexstrasza",
+            "slug": "alexstrasza",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265081733
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264051976
+            },
+            "status": true,
+            "name": "Alleria",
+            "slug": "alleria",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265029824
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264884066
+            },
+            "status": true,
+            "name": "Altar of Storms",
+            "slug": "altar-of-storms",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265713406
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264628616
+            },
+            "status": true,
+            "name": "Alterac Mountains",
+            "slug": "alterac-mountains",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265623642
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264592783
+            },
+            "status": true,
+            "name": "Aman'Thul",
+            "slug": "amanthul",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265625672
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264708913
+            },
+            "status": true,
+            "name": "Andorhal",
+            "slug": "andorhal",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264957518
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264917759
+            },
+            "status": true,
+            "name": "Anetheron",
+            "slug": "anetheron",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265860869
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267547012
+            },
+            "status": true,
+            "name": "Antonidas",
+            "slug": "antonidas",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265944904
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267505046
+            },
+            "status": true,
+            "name": "Anub'arak",
+            "slug": "anubarak",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265672843
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264575089
+            },
+            "status": true,
+            "name": "Anvilmar",
+            "slug": "anvilmar",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265438346
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264427486
+            },
+            "status": true,
+            "name": "Arathor",
+            "slug": "arathor",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264980037
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264886279
+            },
+            "status": true,
+            "name": "Archimonde",
+            "slug": "archimonde",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264996842
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264907178
+            },
+            "status": true,
+            "name": "Area 52",
+            "slug": "area-52",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265101611
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264975756
+            },
+            "status": true,
+            "name": "Argent Dawn",
+            "slug": "argent-dawn",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265518970
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264544113
+            },
+            "status": true,
+            "name": "Arthas",
+            "slug": "arthas",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265694373
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264591624
+            },
+            "status": true,
+            "name": "Arygos",
+            "slug": "arygos",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264995414
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264910656
+            },
+            "status": true,
+            "name": "Auchindoun",
+            "slug": "auchindoun",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265118963
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264986109
+            },
+            "status": true,
+            "name": "Azgalor",
+            "slug": "azgalor",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265295083
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264306224
+            },
+            "status": true,
+            "name": "Azjol-Nerub",
+            "slug": "azjolnerub",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265905542
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264911748
+            },
+            "status": true,
+            "name": "Azralon",
+            "slug": "azralon",
+            "battlegroup": "Shadowburn",
+            "locale": "pt_BR",
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265905023
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264926167
+            },
+            "status": true,
+            "name": "Azshara",
+            "slug": "azshara",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265005951
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264913202
+            },
+            "status": true,
+            "name": "Azuremyst",
+            "slug": "azuremyst",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265939058
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264893299
+            },
+            "status": true,
+            "name": "Baelgun",
+            "slug": "baelgun",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265695470
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264671611
+            },
+            "status": true,
+            "name": "Balnazzar",
+            "slug": "balnazzar",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265612875
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264606017
+            },
+            "status": true,
+            "name": "Barthilas",
+            "slug": "barthilas",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265624146
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264689389
+            },
+            "status": true,
+            "name": "Black Dragonflight",
+            "slug": "black-dragonflight",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265078595
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264046749
+            },
+            "status": true,
+            "name": "Blackhand",
+            "slug": "blackhand",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265111014
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264199155
+            },
+            "status": true,
+            "name": "Blackrock",
+            "slug": "blackrock",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265895140
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267479279
+            },
+            "status": true,
+            "name": "Blackwater Raiders",
+            "slug": "blackwater-raiders",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265676875
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264572120
+            },
+            "status": true,
+            "name": "Blackwing Lair",
+            "slug": "blackwing-lair",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264991642
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264877884
+            },
+            "status": true,
+            "name": "Blade's Edge",
+            "slug": "blades-edge",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353266073808
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267475957
+            },
+            "status": true,
+            "name": "Bladefist",
+            "slug": "bladefist",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265533552
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264535707
+            },
+            "status": true,
+            "name": "Bleeding Hollow",
+            "slug": "bleeding-hollow",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265548081
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264523326
+            },
+            "status": true,
+            "name": "Blood Furnace",
+            "slug": "blood-furnace",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265051620
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264088879
+            },
+            "status": true,
+            "name": "Bloodhoof",
+            "slug": "bloodhoof",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265279731
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264308872
+            },
+            "status": true,
+            "name": "Bloodscalp",
+            "slug": "bloodscalp",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265420517
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264450663
+            },
+            "status": true,
+            "name": "Bonechewer",
+            "slug": "bonechewer",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266070516
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267599658
+            },
+            "status": true,
+            "name": "Borean Tundra",
+            "slug": "borean-tundra",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265018276
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264857418
+            },
+            "status": true,
+            "name": "Boulderfist",
+            "slug": "boulderfist",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265291367
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264306512
+            },
+            "status": true,
+            "name": "Bronzebeard",
+            "slug": "bronzebeard",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265131315
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264218467
+            },
+            "status": true,
+            "name": "Burning Blade",
+            "slug": "burning-blade",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265802357
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264767607
+            },
+            "status": true,
+            "name": "Burning Legion",
+            "slug": "burning-legion",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265221531
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264156671
+            },
+            "status": true,
+            "name": "Caelestrasz",
+            "slug": "caelestrasz",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265810341
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267559488
+            },
+            "status": true,
+            "name": "Cairne",
+            "slug": "cairne",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265857632
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267539775
+            },
+            "status": true,
+            "name": "Cenarion Circle",
+            "slug": "cenarion-circle",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266018181
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264879328
+            },
+            "status": true,
+            "name": "Cenarius",
+            "slug": "cenarius",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265075364
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264047507
+            },
+            "status": true,
+            "name": "Cho'gall",
+            "slug": "chogall",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265183727
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264103868
+            },
+            "status": true,
+            "name": "Chromaggus",
+            "slug": "chromaggus",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264990477
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264894718
+            },
+            "status": true,
+            "name": "Coilfang",
+            "slug": "coilfang",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265058341
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264822482
+            },
+            "status": true,
+            "name": "Crushridge",
+            "slug": "crushridge",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265030667
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264824808
+            },
+            "status": true,
+            "name": "Daggerspine",
+            "slug": "daggerspine",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265707183
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264680432
+            },
+            "status": true,
+            "name": "Dalaran",
+            "slug": "dalaran",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265604681
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264608925
+            },
+            "status": true,
+            "name": "Dalvengyr",
+            "slug": "dalvengyr",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265288952
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264259094
+            },
+            "status": true,
+            "name": "Dark Iron",
+            "slug": "dark-iron",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265278933
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264295074
+            },
+            "status": true,
+            "name": "Darkspear",
+            "slug": "darkspear",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266108324
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267682472
+            },
+            "status": true,
+            "name": "Darrowmere",
+            "slug": "darrowmere",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265566226
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264582367
+            },
+            "status": true,
+            "name": "Dath'Remar",
+            "slug": "dathremar",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265541223
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264566471
+            },
+            "status": true,
+            "name": "Dawnbringer",
+            "slug": "dawnbringer",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265078748
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264865002
+            },
+            "status": true,
+            "name": "Deathwing",
+            "slug": "deathwing",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265088811
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264888053
+            },
+            "status": true,
+            "name": "Demon Soul",
+            "slug": "demon-soul",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265719114
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264605358
+            },
+            "status": true,
+            "name": "Dentarg",
+            "slug": "dentarg",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265693784
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264674025
+            },
+            "status": true,
+            "name": "Destromath",
+            "slug": "destromath",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265692715
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264666860
+            },
+            "status": true,
+            "name": "Dethecus",
+            "slug": "dethecus",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265264032
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264241173
+            },
+            "status": true,
+            "name": "Detheroc",
+            "slug": "detheroc",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265049684
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264875934
+            },
+            "status": true,
+            "name": "Doomhammer",
+            "slug": "doomhammer",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264874903
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264841045
+            },
+            "status": true,
+            "name": "Draenor",
+            "slug": "draenor",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265023677
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264825826
+            },
+            "status": true,
+            "name": "Dragonblight",
+            "slug": "dragonblight",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265425737
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264431889
+            },
+            "status": true,
+            "name": "Dragonmaw",
+            "slug": "dragonmaw",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265806607
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267481752
+            },
+            "status": true,
+            "name": "Drak'Tharon",
+            "slug": "draktharon",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265162122
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264094263
+            },
+            "status": true,
+            "name": "Drak'thul",
+            "slug": "drakthul",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265183892
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264098044
+            },
+            "status": true,
+            "name": "Draka",
+            "slug": "draka",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265765618
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264757762
+            },
+            "status": true,
+            "name": "Drakkari",
+            "slug": "drakkari",
+            "battlegroup": "Vindication",
+            "locale": "es_MX",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265237308
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264126449
+            },
+            "status": true,
+            "name": "Dreadmaul",
+            "slug": "dreadmaul",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266077787
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267557928
+            },
+            "status": true,
+            "name": "Drenden",
+            "slug": "drenden",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265078070
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264822210
+            },
+            "status": true,
+            "name": "Dunemaul",
+            "slug": "dunemaul",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265089247
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264072396
+            },
+            "status": true,
+            "name": "Durotan",
+            "slug": "durotan",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265054351
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264900594
+            },
+            "status": true,
+            "name": "Duskwood",
+            "slug": "duskwood",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265169664
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264221827
+            },
+            "status": true,
+            "name": "Earthen Ring",
+            "slug": "earthen-ring",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266085895
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267517034
+            },
+            "status": true,
+            "name": "Echo Isles",
+            "slug": "echo-isles",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265667078
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264709217
+            },
+            "status": true,
+            "name": "Eitrigg",
+            "slug": "eitrigg",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264917907
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264894060
+            },
+            "status": true,
+            "name": "Eldre'Thalas",
+            "slug": "eldrethalas",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265532136
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264527279
+            },
+            "status": true,
+            "name": "Elune",
+            "slug": "elune",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rppvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265287839
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264261984
+            },
+            "status": true,
+            "name": "Emerald Dream",
+            "slug": "emerald-dream",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265197178
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264207420
+            },
+            "status": true,
+            "name": "Eonar",
+            "slug": "eonar",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265137959
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264216208
+            },
+            "status": true,
+            "name": "Eredar",
+            "slug": "eredar",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265720164
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264699417
+            },
+            "status": true,
+            "name": "Executus",
+            "slug": "executus",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264999196
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264912455
+            },
+            "status": true,
+            "name": "Exodar",
+            "slug": "exodar",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265928297
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267641438
+            },
+            "status": true,
+            "name": "Farstriders",
+            "slug": "farstriders",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265284578
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264292719
+            },
+            "status": true,
+            "name": "Feathermoon",
+            "slug": "feathermoon",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353269390651
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267451793
+            },
+            "status": true,
+            "name": "Fenris",
+            "slug": "fenris",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265095704
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264917844
+            },
+            "status": true,
+            "name": "Firetree",
+            "slug": "firetree",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265550108
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264550351
+            },
+            "status": true,
+            "name": "Fizzcrank",
+            "slug": "fizzcrank",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265050882
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264874023
+            },
+            "status": true,
+            "name": "Frostmane",
+            "slug": "frostmane",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265559412
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264578553
+            },
+            "status": true,
+            "name": "Frostmourne",
+            "slug": "frostmourne",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265222412
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264122554
+            },
+            "status": true,
+            "name": "Frostwolf",
+            "slug": "frostwolf",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265548659
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264541903
+            },
+            "status": true,
+            "name": "Galakrond",
+            "slug": "galakrond",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265150111
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264976252
+            },
+            "status": true,
+            "name": "Gallywix",
+            "slug": "gallywix",
+            "battlegroup": "Ruin",
+            "locale": "pt_BR",
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265153316
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264070456
+            },
+            "status": true,
+            "name": "Garithos",
+            "slug": "garithos",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265076409
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264076558
+            },
+            "status": true,
+            "name": "Garona",
+            "slug": "garona",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265906058
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267611195
+            },
+            "status": true,
+            "name": "Garrosh",
+            "slug": "garrosh",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265531634
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264524882
+            },
+            "status": true,
+            "name": "Ghostlands",
+            "slug": "ghostlands",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265207621
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264196788
+            },
+            "status": true,
+            "name": "Gilneas",
+            "slug": "gilneas",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265092339
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264864580
+            },
+            "status": true,
+            "name": "Gnomeregan",
+            "slug": "gnomeregan",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266638734
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265682889
+            },
+            "status": true,
+            "name": "Goldrinn",
+            "slug": "goldrinn",
+            "battlegroup": "Rampage",
+            "locale": "pt_BR",
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265153647
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264225791
+            },
+            "status": true,
+            "name": "Gorefiend",
+            "slug": "gorefiend",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265706258
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264726504
+            },
+            "status": true,
+            "name": "Gorgonnash",
+            "slug": "gorgonnash",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265279366
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264282526
+            },
+            "status": true,
+            "name": "Greymane",
+            "slug": "greymane",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265537167
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264544412
+            },
+            "status": true,
+            "name": "Grizzly Hills",
+            "slug": "grizzly-hills",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265075627
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264044774
+            },
+            "status": true,
+            "name": "Gul'dan",
+            "slug": "guldan",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265670913
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264698059
+            },
+            "status": true,
+            "name": "Gundrak",
+            "slug": "gundrak",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265095113
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264897254
+            },
+            "status": true,
+            "name": "Gurubashi",
+            "slug": "gurubashi",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265186541
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264069682
+            },
+            "status": true,
+            "name": "Hakkar",
+            "slug": "hakkar",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265068518
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264120760
+            },
+            "status": true,
+            "name": "Haomarush",
+            "slug": "haomarush",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265078131
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264045372
+            },
+            "status": true,
+            "name": "Hellscream",
+            "slug": "hellscream",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266027830
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267596970
+            },
+            "status": true,
+            "name": "Hydraxis",
+            "slug": "hydraxis",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265969175
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267482332
+            },
+            "status": true,
+            "name": "Hyjal",
+            "slug": "hyjal",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265101192
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264904436
+            },
+            "status": true,
+            "name": "Icecrown",
+            "slug": "icecrown",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265080767
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264091008
+            },
+            "status": true,
+            "name": "Illidan",
+            "slug": "illidan",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265682378
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264597621
+            },
+            "status": true,
+            "name": "Jaedenar",
+            "slug": "jaedenar",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265176871
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264076013
+            },
+            "status": true,
+            "name": "Jubei'Thos",
+            "slug": "jubeithos",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265085022
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264063176
+            },
+            "status": true,
+            "name": "Kael'thas",
+            "slug": "kaelthas",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265229268
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264251409
+            },
+            "status": true,
+            "name": "Kalecgos",
+            "slug": "kalecgos",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265127959
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264204121
+            },
+            "status": true,
+            "name": "Kargath",
+            "slug": "kargath",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265108239
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264880566
+            },
+            "status": true,
+            "name": "Kel'Thuzad",
+            "slug": "kelthuzad",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265714616
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264705877
+            },
+            "status": true,
+            "name": "Khadgar",
+            "slug": "khadgar",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265218688
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264108830
+            },
+            "status": true,
+            "name": "Khaz Modan",
+            "slug": "khaz-modan",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265529636
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264584777
+            },
+            "status": true,
+            "name": "Khaz'goroth",
+            "slug": "khazgoroth",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265078848
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264164991
+            },
+            "status": true,
+            "name": "Kil'jaeden",
+            "slug": "kiljaeden",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265139758
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264229899
+            },
+            "status": true,
+            "name": "Kilrogg",
+            "slug": "kilrogg",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265669813
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264649058
+            },
+            "status": true,
+            "name": "Kirin Tor",
+            "slug": "kirin-tor",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265707335
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264722494
+            },
+            "status": true,
+            "name": "Korgath",
+            "slug": "korgath",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266128779
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267620922
+            },
+            "status": true,
+            "name": "Korialstrasz",
+            "slug": "korialstrasz",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265662516
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264726657
+            },
+            "status": true,
+            "name": "Kul Tiras",
+            "slug": "kul-tiras",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265793036
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264769181
+            },
+            "status": true,
+            "name": "Laughing Skull",
+            "slug": "laughing-skull",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265681401
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264573649
+            },
+            "status": true,
+            "name": "Lethon",
+            "slug": "lethon",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266055704
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267499858
+            },
+            "status": true,
+            "name": "Lightbringer",
+            "slug": "lightbringer",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265219765
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264212007
+            },
+            "status": true,
+            "name": "Lightning's Blade",
+            "slug": "lightnings-blade",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rppvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265913817
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264910070
+            },
+            "status": true,
+            "name": "Lightninghoof",
+            "slug": "lightninghoof",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265227284
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264210425
+            },
+            "status": true,
+            "name": "Llane",
+            "slug": "llane",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265478485
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264545727
+            },
+            "status": true,
+            "name": "Lothar",
+            "slug": "lothar",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265130615
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264090857
+            },
+            "status": true,
+            "name": "Madoran",
+            "slug": "madoran",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rppvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265943212
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264903468
+            },
+            "status": true,
+            "name": "Maelstrom",
+            "slug": "maelstrom",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265135344
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353265022530
+            },
+            "status": true,
+            "name": "Magtheridon",
+            "slug": "magtheridon",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266011187
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267578310
+            },
+            "status": true,
+            "name": "Maiev",
+            "slug": "maiev",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265102930
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264881230
+            },
+            "status": true,
+            "name": "Mal'Ganis",
+            "slug": "malganis",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265918570
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264900829
+            },
+            "status": true,
+            "name": "Malfurion",
+            "slug": "malfurion",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265653699
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264695845
+            },
+            "status": true,
+            "name": "Malorne",
+            "slug": "malorne",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265771239
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264775383
+            },
+            "status": true,
+            "name": "Malygos",
+            "slug": "malygos",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265473361
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264547524
+            },
+            "status": true,
+            "name": "Mannoroth",
+            "slug": "mannoroth",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265170870
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264112021
+            },
+            "status": true,
+            "name": "Medivh",
+            "slug": "medivh",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353266115058
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267540194
+            },
+            "status": true,
+            "name": "Misha",
+            "slug": "misha",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265984299
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267545439
+            },
+            "status": true,
+            "name": "Mok'Nathal",
+            "slug": "moknathal",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265923352
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267580511
+            },
+            "status": true,
+            "name": "Moon Guard",
+            "slug": "moon-guard",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265294380
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264278621
+            },
+            "status": true,
+            "name": "Moonrunner",
+            "slug": "moonrunner",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265210077
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264109218
+            },
+            "status": true,
+            "name": "Mug'thol",
+            "slug": "mugthol",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265704509
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264701665
+            },
+            "status": true,
+            "name": "Muradin",
+            "slug": "muradin",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265222182
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264209323
+            },
+            "status": true,
+            "name": "Nagrand",
+            "slug": "nagrand",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265441901
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264451042
+            },
+            "status": true,
+            "name": "Nathrezim",
+            "slug": "nathrezim",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265981568
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267621709
+            },
+            "status": true,
+            "name": "Nazgrel",
+            "slug": "nazgrel",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265946274
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264907415
+            },
+            "status": true,
+            "name": "Nazjatar",
+            "slug": "nazjatar",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265698092
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264680274
+            },
+            "status": true,
+            "name": "Nemesis",
+            "slug": "nemesis",
+            "battlegroup": "Rampage",
+            "locale": "pt_BR",
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265229617
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264158764
+            },
+            "status": true,
+            "name": "Ner'zhul",
+            "slug": "nerzhul",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265929552
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267596703
+            },
+            "status": true,
+            "name": "Nesingwary",
+            "slug": "nesingwary",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265807633
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267538774
+            },
+            "status": true,
+            "name": "Nordrassil",
+            "slug": "nordrassil",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265052534
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264918778
+            },
+            "status": true,
+            "name": "Norgannon",
+            "slug": "norgannon",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265038305
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264898553
+            },
+            "status": true,
+            "name": "Onyxia",
+            "slug": "onyxia",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265293285
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264303426
+            },
+            "status": true,
+            "name": "Perenolde",
+            "slug": "perenolde",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265230946
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264221098
+            },
+            "status": true,
+            "name": "Proudmoore",
+            "slug": "proudmoore",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265767056
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264775212
+            },
+            "status": true,
+            "name": "Quel'Thalas",
+            "slug": "quelthalas",
+            "battlegroup": "Vindication",
+            "locale": "es_MX",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265990792
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267539929
+            },
+            "status": true,
+            "name": "Quel'dorei",
+            "slug": "queldorei",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265775726
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264757883
+            },
+            "status": true,
+            "name": "Ragnaros",
+            "slug": "ragnaros",
+            "battlegroup": "Vindication",
+            "locale": "es_MX",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265705219
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264659485
+            },
+            "status": true,
+            "name": "Ravencrest",
+            "slug": "ravencrest",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rppvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353266051587
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267655729
+            },
+            "status": true,
+            "name": "Ravenholdt",
+            "slug": "ravenholdt",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265664297
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264690438
+            },
+            "status": true,
+            "name": "Rexxar",
+            "slug": "rexxar",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265836360
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267574500
+            },
+            "status": true,
+            "name": "Rivendare",
+            "slug": "rivendare",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265664035
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264694176
+            },
+            "status": true,
+            "name": "Runetotem",
+            "slug": "runetotem",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265287910
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264303109
+            },
+            "status": true,
+            "name": "Sargeras",
+            "slug": "sargeras",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265703725
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264681865
+            },
+            "status": true,
+            "name": "Saurfang",
+            "slug": "saurfang",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264919549
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264835688
+            },
+            "status": true,
+            "name": "Scarlet Crusade",
+            "slug": "scarlet-crusade",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264962025
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264924267
+            },
+            "status": true,
+            "name": "Scilla",
+            "slug": "scilla",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265572114
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264611270
+            },
+            "status": true,
+            "name": "Sen'jin",
+            "slug": "senjin",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265705833
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264590078
+            },
+            "status": true,
+            "name": "Sentinels",
+            "slug": "sentinels",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265056321
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264945462
+            },
+            "status": true,
+            "name": "Shadow Council",
+            "slug": "shadow-council",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265220429
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264232572
+            },
+            "status": true,
+            "name": "Shadowmoon",
+            "slug": "shadowmoon",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265414923
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264428080
+            },
+            "status": true,
+            "name": "Shadowsong",
+            "slug": "shadowsong",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265844149
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267525292
+            },
+            "status": true,
+            "name": "Shandris",
+            "slug": "shandris",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265511552
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264534800
+            },
+            "status": true,
+            "name": "Shattered Halls",
+            "slug": "shattered-halls",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265516169
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264544310
+            },
+            "status": true,
+            "name": "Shattered Hand",
+            "slug": "shattered-hand",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353266118015
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267485376
+            },
+            "status": true,
+            "name": "Shu'halo",
+            "slug": "shuhalo",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265142431
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264237571
+            },
+            "status": true,
+            "name": "Silver Hand",
+            "slug": "silver-hand",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265414148
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264450288
+            },
+            "status": true,
+            "name": "Silvermoon",
+            "slug": "silvermoon",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266019756
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267594897
+            },
+            "status": true,
+            "name": "Sisters of Elune",
+            "slug": "sisters-of-elune",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265501903
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264564056
+            },
+            "status": true,
+            "name": "Skullcrusher",
+            "slug": "skullcrusher",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265091495
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264864637
+            },
+            "status": true,
+            "name": "Skywall",
+            "slug": "skywall",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265055302
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264915442
+            },
+            "status": true,
+            "name": "Smolderthorn",
+            "slug": "smolderthorn",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265694016
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264668166
+            },
+            "status": true,
+            "name": "Spinebreaker",
+            "slug": "spinebreaker",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265057157
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264921306
+            },
+            "status": true,
+            "name": "Spirestone",
+            "slug": "spirestone",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265285409
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264289651
+            },
+            "status": true,
+            "name": "Staghelm",
+            "slug": "staghelm",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265061390
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264061632
+            },
+            "status": true,
+            "name": "Steamwheedle Cartel",
+            "slug": "steamwheedle-cartel",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265057505
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264845652
+            },
+            "status": true,
+            "name": "Stonemaul",
+            "slug": "stonemaul",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265074076
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264053270
+            },
+            "status": true,
+            "name": "Stormrage",
+            "slug": "stormrage",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265088217
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264043403
+            },
+            "status": true,
+            "name": "Stormreaver",
+            "slug": "stormreaver",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265050854
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264822996
+            },
+            "status": true,
+            "name": "Stormscale",
+            "slug": "stormscale",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264984482
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264823645
+            },
+            "status": true,
+            "name": "Suramar",
+            "slug": "suramar",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265668897
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264576146
+            },
+            "status": true,
+            "name": "Tanaris",
+            "slug": "tanaris",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265441150
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264431291
+            },
+            "status": true,
+            "name": "Terenas",
+            "slug": "terenas",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264984159
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264880412
+            },
+            "status": true,
+            "name": "Terokkar",
+            "slug": "terokkar",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265569042
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264609182
+            },
+            "status": true,
+            "name": "Thaurissan",
+            "slug": "thaurissan",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "Australia/Melbourne"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353266026462
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267498609
+            },
+            "status": true,
+            "name": "The Forgotten Coast",
+            "slug": "the-forgotten-coast",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264970963
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264847218
+            },
+            "status": true,
+            "name": "The Scryers",
+            "slug": "the-scryers",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265547591
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264523833
+            },
+            "status": true,
+            "name": "The Underbog",
+            "slug": "the-underbog",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rppvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265704314
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264651557
+            },
+            "status": true,
+            "name": "The Venture Co",
+            "slug": "the-venture-co",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "rp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265645877
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264688018
+            },
+            "status": true,
+            "name": "Thorium Brotherhood",
+            "slug": "thorium-brotherhood",
+            "battlegroup": "Vengeance",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265721086
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264615335
+            },
+            "status": true,
+            "name": "Thrall",
+            "slug": "thrall",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265785360
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264755519
+            },
+            "status": true,
+            "name": "Thunderhorn",
+            "slug": "thunderhorn",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265797829
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264779071
+            },
+            "status": true,
+            "name": "Thunderlord",
+            "slug": "thunderlord",
+            "battlegroup": "Vindication",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265114219
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264165382
+            },
+            "status": true,
+            "name": "Tichondrius",
+            "slug": "tichondrius",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265907979
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264921122
+            },
+            "status": true,
+            "name": "Tol Barad",
+            "slug": "tol-barad",
+            "battlegroup": "Shadowburn",
+            "locale": "pt_BR",
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265836833
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267558978
+            },
+            "status": true,
+            "name": "Tortheldrin",
+            "slug": "tortheldrin",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265108738
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264999899
+            },
+            "status": true,
+            "name": "Trollbane",
+            "slug": "trollbane",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264957992
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264885244
+            },
+            "status": true,
+            "name": "Turalyon",
+            "slug": "turalyon",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "rppvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265948659
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264917800
+            },
+            "status": true,
+            "name": "Twisting Nether",
+            "slug": "twisting-nether",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265084282
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264863533
+            },
+            "status": true,
+            "name": "Uldaman",
+            "slug": "uldaman",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265012120
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 1,
+                "next": 1353264855263
+            },
+            "status": true,
+            "name": "Uldum",
+            "slug": "uldum",
+            "battlegroup": "Cyclone",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265700895
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264598146
+            },
+            "status": true,
+            "name": "Undermine",
+            "slug": "undermine",
+            "battlegroup": "Nightfall",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265292632
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264258775
+            },
+            "status": true,
+            "name": "Ursin",
+            "slug": "ursin",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265991434
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267475575
+            },
+            "status": true,
+            "name": "Uther",
+            "slug": "uther",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353266041397
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267689714
+            },
+            "status": true,
+            "name": "Vashj",
+            "slug": "vashj",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265604845
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264603993
+            },
+            "status": true,
+            "name": "Vek'nilash",
+            "slug": "veknilash",
+            "battlegroup": "Bloodlust",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264986441
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264906690
+            },
+            "status": true,
+            "name": "Velen",
+            "slug": "velen",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265542750
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264539991
+            },
+            "status": true,
+            "name": "Warsong",
+            "slug": "warsong",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265076998
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264058172
+            },
+            "status": true,
+            "name": "Whisperwind",
+            "slug": "whisperwind",
+            "battlegroup": "Rampage",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pvp",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265290712
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264315858
+            },
+            "status": true,
+            "name": "Wildhammer",
+            "slug": "wildhammer",
+            "battlegroup": "Shadowburn",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265096725
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264908867
+            },
+            "status": true,
+            "name": "Windrunner",
+            "slug": "windrunner",
+            "battlegroup": "Reckoning",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353266120503
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353267506679
+            },
+            "status": true,
+            "name": "Winterhoof",
+            "slug": "winterhoof",
+            "battlegroup": "Whirlwind",
+            "locale": "en_US",
+            "timezone": "America/Chicago"
+        },
+        {
+            "type": "rp",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265945031
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353267489172
+            },
+            "status": true,
+            "name": "Wyrmrest Accord",
+            "slug": "wyrmrest-accord",
+            "battlegroup": "Emberstorm",
+            "locale": "en_US",
+            "timezone": "America/Los_Angeles"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265713594
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353264605837
+            },
+            "status": true,
+            "name": "Ysera",
+            "slug": "ysera",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265604523
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264659769
+            },
+            "status": true,
+            "name": "Ysondre",
+            "slug": "ysondre",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pve",
+            "population": "medium",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264978001
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264864251
+            },
+            "status": true,
+            "name": "Zangarmarsh",
+            "slug": "zangarmarsh",
+            "battlegroup": "Retaliation",
+            "locale": "en_US",
+            "timezone": "America/Denver"
+        },
+        {
+            "type": "pve",
+            "population": "high",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 1,
+                "status": 0,
+                "next": 1353265163533
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353264101716
+            },
+            "status": true,
+            "name": "Zul'jin",
+            "slug": "zuljin",
+            "battlegroup": "Ruin",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        },
+        {
+            "type": "pvp",
+            "population": "low",
+            "queue": false,
+            "wintergrasp": {
+                "area": 1,
+                "controlling-faction": 0,
+                "status": 0,
+                "next": 1353265055859
+            },
+            "tol-barad": {
+                "area": 21,
+                "controlling-faction": 0,
+                "status": 1,
+                "next": 1353264931107
+            },
+            "status": true,
+            "name": "Zuluhed",
+            "slug": "zuluhed",
+            "battlegroup": "Stormstrike",
+            "locale": "en_US",
+            "timezone": "America/New_York"
+        }
+    ]
+}
