@@ -1,4 +1,4 @@
-/*! AeroGear JavaScript Library - v1.0.0.Alpha - 2012-12-07
+/*! AeroGear JavaScript Library - v1.0.0.Alpha - 2012-10-11
 * https://github.com/aerogear/aerogear-js
 * JBoss, Home of Professional Open Source
 * Copyright 2012, Red Hat, Inc., and individual contributors
@@ -171,256 +171,6 @@ AeroGear.Core = function() {
     };
 })( AeroGear, jQuery );
 
-//     node-uuid/uuid.js
-//
-//     Copyright (c) 2010 Robert Kieffer
-//     Dual licensed under the MIT and GPL licenses.
-//     Documentation and details at https://github.com/broofa/node-uuid
-(function() {
-  var _global = this;
-
-  // Unique ID creation requires a high quality random # generator, but
-  // Math.random() does not guarantee "cryptographic quality".  So we feature
-  // detect for more robust APIs, normalizing each method to return 128-bits
-  // (16 bytes) of random data.
-  var mathRNG, nodeRNG, whatwgRNG;
-
-  // Math.random()-based RNG.  All platforms, very fast, unknown quality
-  var _rndBytes = new Array(16);
-  mathRNG = function() {
-    var r, b = _rndBytes, i = 0;
-
-    for (var i = 0, r; i < 16; i++) {
-      if ((i & 0x03) == 0) r = Math.random() * 0x100000000;
-      b[i] = r >>> ((i & 0x03) << 3) & 0xff;
-    }
-
-    return b;
-  }
-
-  // WHATWG crypto-based RNG - http://wiki.whatwg.org/wiki/Crypto
-  // WebKit only (currently), moderately fast, high quality
-  if (_global.crypto && crypto.getRandomValues) {
-    var _rnds = new Uint32Array(4);
-    whatwgRNG = function() {
-      crypto.getRandomValues(_rnds);
-
-      for (var c = 0 ; c < 16; c++) {
-        _rndBytes[c] = _rnds[c >> 2] >>> ((c & 0x03) * 8) & 0xff;
-      }
-      return _rndBytes;
-    }
-  }
-
-  // Node.js crypto-based RNG - http://nodejs.org/docs/v0.6.2/api/crypto.html
-  // Node.js only, moderately fast, high quality
-  try {
-    var _rb = require('crypto').randomBytes;
-    nodeRNG = _rb && function() {
-      return _rb(16);
-    };
-  } catch (e) {}
-
-  // Select RNG with best quality
-  var _rng = nodeRNG || whatwgRNG || mathRNG;
-
-  // Buffer class to use
-  var BufferClass = typeof(Buffer) == 'function' ? Buffer : Array;
-
-  // Maps for number <-> hex string conversion
-  var _byteToHex = [];
-  var _hexToByte = {};
-  for (var i = 0; i < 256; i++) {
-    _byteToHex[i] = (i + 0x100).toString(16).substr(1);
-    _hexToByte[_byteToHex[i]] = i;
-  }
-
-  // **`parse()` - Parse a UUID into it's component bytes**
-  function parse(s, buf, offset) {
-    var i = (buf && offset) || 0, ii = 0;
-
-    buf = buf || [];
-    s.toLowerCase().replace(/[0-9a-f]{2}/g, function(byte) {
-      if (ii < 16) { // Don't overflow!
-        buf[i + ii++] = _hexToByte[byte];
-      }
-    });
-
-    // Zero out remaining bytes if string was short
-    while (ii < 16) {
-      buf[i + ii++] = 0;
-    }
-
-    return buf;
-  }
-
-  // **`unparse()` - Convert UUID byte array (ala parse()) into a string**
-  function unparse(buf, offset) {
-    var i = offset || 0, bth = _byteToHex;
-    return  bth[buf[i++]] + bth[buf[i++]] +
-            bth[buf[i++]] + bth[buf[i++]] + '-' +
-            bth[buf[i++]] + bth[buf[i++]] + '-' +
-            bth[buf[i++]] + bth[buf[i++]] + '-' +
-            bth[buf[i++]] + bth[buf[i++]] + '-' +
-            bth[buf[i++]] + bth[buf[i++]] +
-            bth[buf[i++]] + bth[buf[i++]] +
-            bth[buf[i++]] + bth[buf[i++]];
-  }
-
-  // **`v1()` - Generate time-based UUID**
-  //
-  // Inspired by https://github.com/LiosK/UUID.js
-  // and http://docs.python.org/library/uuid.html
-
-  // random #'s we need to init node and clockseq
-  var _seedBytes = _rng();
-
-  // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
-  var _nodeId = [
-    _seedBytes[0] | 0x01,
-    _seedBytes[1], _seedBytes[2], _seedBytes[3], _seedBytes[4], _seedBytes[5]
-  ];
-
-  // Per 4.2.2, randomize (14 bit) clockseq
-  var _clockseq = (_seedBytes[6] << 8 | _seedBytes[7]) & 0x3fff;
-
-  // Previous uuid creation time
-  var _lastMSecs = 0, _lastNSecs = 0;
-
-  // See https://github.com/broofa/node-uuid for API details
-  function v1(options, buf, offset) {
-    var i = buf && offset || 0;
-    var b = buf || [];
-
-    options = options || {};
-
-    var clockseq = options.clockseq != null ? options.clockseq : _clockseq;
-
-    // UUID timestamps are 100 nano-second units since the Gregorian epoch,
-    // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
-    // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
-    // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
-    var msecs = options.msecs != null ? options.msecs : new Date().getTime();
-
-    // Per 4.2.1.2, use count of uuid's generated during the current clock
-    // cycle to simulate higher resolution clock
-    var nsecs = options.nsecs != null ? options.nsecs : _lastNSecs + 1;
-
-    // Time since last uuid creation (in msecs)
-    var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
-
-    // Per 4.2.1.2, Bump clockseq on clock regression
-    if (dt < 0 && options.clockseq == null) {
-      clockseq = clockseq + 1 & 0x3fff;
-    }
-
-    // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
-    // time interval
-    if ((dt < 0 || msecs > _lastMSecs) && options.nsecs == null) {
-      nsecs = 0;
-    }
-
-    // Per 4.2.1.2 Throw error if too many uuids are requested
-    if (nsecs >= 10000) {
-      throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
-    }
-
-    _lastMSecs = msecs;
-    _lastNSecs = nsecs;
-    _clockseq = clockseq;
-
-    // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
-    msecs += 12219292800000;
-
-    // `time_low`
-    var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
-    b[i++] = tl >>> 24 & 0xff;
-    b[i++] = tl >>> 16 & 0xff;
-    b[i++] = tl >>> 8 & 0xff;
-    b[i++] = tl & 0xff;
-
-    // `time_mid`
-    var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
-    b[i++] = tmh >>> 8 & 0xff;
-    b[i++] = tmh & 0xff;
-
-    // `time_high_and_version`
-    b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
-    b[i++] = tmh >>> 16 & 0xff;
-
-    // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
-    b[i++] = clockseq >>> 8 | 0x80;
-
-    // `clock_seq_low`
-    b[i++] = clockseq & 0xff;
-
-    // `node`
-    var node = options.node || _nodeId;
-    for (var n = 0; n < 6; n++) {
-      b[i + n] = node[n];
-    }
-
-    return buf ? buf : unparse(b);
-  }
-
-  // **`v4()` - Generate random UUID**
-
-  // See https://github.com/broofa/node-uuid for API details
-  function v4(options, buf, offset) {
-    // Deprecated - 'format' argument, as supported in v1.2
-    var i = buf && offset || 0;
-
-    if (typeof(options) == 'string') {
-      buf = options == 'binary' ? new BufferClass(16) : null;
-      options = null;
-    }
-    options = options || {};
-
-    var rnds = options.random || (options.rng || _rng)();
-
-    // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-    rnds[6] = (rnds[6] & 0x0f) | 0x40;
-    rnds[8] = (rnds[8] & 0x3f) | 0x80;
-
-    // Copy bytes to buffer, if provided
-    if (buf) {
-      for (var ii = 0; ii < 16; ii++) {
-        buf[i + ii] = rnds[ii];
-      }
-    }
-
-    return buf || unparse(rnds);
-  }
-
-  // Export public API
-  var uuid = v4;
-  uuid.v1 = v1;
-  uuid.v4 = v4;
-  uuid.parse = parse;
-  uuid.unparse = unparse;
-  uuid.BufferClass = BufferClass;
-
-  // Export RNG options
-  uuid.mathRNG = mathRNG;
-  uuid.nodeRNG = nodeRNG;
-  uuid.whatwgRNG = whatwgRNG;
-
-  if (typeof(module) != 'undefined') {
-    // Play nice with node.js
-    module.exports = uuid;
-  } else {
-    // Play nice with browsers
-    var _previousRoot = _global.uuid;
-
-    // **`noConflict()` - (browser only) to reset global 'uuid' var**
-    uuid.noConflict = function() {
-      _global.uuid = _previousRoot;
-      return uuid;
-    }
-    _global.uuid = uuid;
-  }
-}());
-
 (function( AeroGear, $, undefined ) {
     /**
         The AeroGear.Pipeline provides a persistence API that is protocol agnostic and does not depend on any certain data model. Through the use of adapters, this library provides common methods like read, save and delete that will just work.
@@ -475,7 +225,7 @@ AeroGear.Core = function() {
     AeroGear.Pipeline.adapters = {};
 })( AeroGear, jQuery );
 
-(function( AeroGear, $, uuid, undefined ) {
+(function( AeroGear, $, undefined ) {
     /**
         The REST adapter is the default type used when creating a new pipe. It uses jQuery.ajax to communicate with the server. By default, the RESTful endpoint used by this pipe is the app's current context, followed by the pipe name. For example, if the app is running on http://mysite.com/myApp, then a pipe named `tasks` would use http://mysite.com/myApp/tasks as its REST endpoint.
         @constructs AeroGear.Pipeline.adapters.Rest
@@ -485,6 +235,8 @@ AeroGear.Core = function() {
         @param {String} [settings.baseURL] - defines the base URL to use for an endpoint
         @param {String} [settings.endpoint=pipename] - overrides the default naming of the endpoint which uses the pipeName
         @param {String} [settings.recordId="id"] - the name of the field used to uniquely identify a "record" in the data
+        @param {Boolean} [settings.jsonp=false] - If true, this pipe will use jsonp
+        @param {String} [settings.callback] - when settings.jsonp == true, will override the jQuery jsonpCallback
         @returns {Object} The created pipe
      */
     AeroGear.Pipeline.adapters.Rest = function( pipeName, settings ) {
@@ -505,6 +257,14 @@ AeroGear.Core = function() {
             authenticator = settings.authenticator || null,
             type = "Rest";
 
+            if( settings.jsonp ) {
+                ajaxSettings.dataType = "jsonp",
+                ajaxSettings.jsonp = settings.jsonp.jsonp ? settings.jsonp.jsonp : "callback";
+
+                if( settings.jsonp.callback ) {
+                    ajaxSettings.jsonpCallback = settings.callback;
+                }
+            }
         // Privileged Methods
         /**
             Return whether or not the client should consider itself authenticated. Of course, the server may have removed access so that will have to be handled when a request is made
@@ -564,16 +324,14 @@ AeroGear.Core = function() {
         Reads data from the specified endpoint
         @param {Object} [options={}] - Additional options
         @param {Function} [options.complete] - a callback to be called when the result of the request to the server is complete, regardless of success
-        @param {Object} [options.query] - a hash of key/value pairs that can be passed to the server as additional information for use when determining what data to return
+        @param {Object} [options.data] - a hash of key/value pairs that can be passed to the server as additional information for use when determining what data to return
         @param {Object} [options.id] - the value to append to the endpoint URL,  should be the same as the pipelines recordId
         @param {Function} [options.error] - a callback to be called when the request to the server results in an error
         @param {Object} [options.statusCode] - a collection of status codes and callbacks to fire when the request to the server returns on of those codes. For more info see the statusCode option on the <a href="http://api.jquery.com/jQuery.ajax/">jQuery.ajax page</a>.
         @param {Function} [options.success] - a callback to be called when the result of the request to the server is successful
-        @param {Mixed} [options.jsonp] - Turns jsonp on/off for reads, Set to true, or an object with options
-        @param {String} [options.jsonp.callback] - Override the callback function name in a jsonp request. This value will be used instead of 'callback' in the 'callback=?' part of the query string in the url
         @returns {Object} A deferred implementing the promise interface similar to the jqXHR created by jQuery.ajax
         @example
-        var myPipe = AeroGear.Pipeline( "tasks" ).pipes[ 0 ];
+        var myPipe = AeroGear.pipeline( "tasks" ).pipes[ 0 ];
 
         // Get a set of key/value pairs of all data on the server associated with this pipe
         var allData = myPipe.read();
@@ -621,7 +379,7 @@ AeroGear.Core = function() {
             }
         };
         error = function( type, errorMessage ) {
-            var stores = options.stores ? AeroGear.isArray( options.stores ) ? options.stores : [ options.stores ] : [],
+            var stores = options.stores ? that.isArray( options.stores ) ? options.stores : [ options.stores ] : [],
                 item;
 
             if ( type === "auth" && stores.length ) {
@@ -637,18 +395,12 @@ AeroGear.Core = function() {
         };
         extraOptions = {
             type: "GET",
-            data: options.query,
             success: success,
             error: error,
             url: url,
             statusCode: options.statusCode,
             complete: options.complete
         };
-
-        if( options.jsonp ) {
-            extraOptions.dataType = "jsonp";
-            extraOptions.jsonp = options.jsonp.callback ? options.jsonp.callback : "callback";
-        }
 
         return AeroGear.ajax( this, $.extend( {}, this.getAjaxSettings(), extraOptions ) );
     };
@@ -664,7 +416,7 @@ AeroGear.Core = function() {
         @param {Object|Array} [options.stores] - A single store object or array of stores to be updated when a server update is successful
         @returns {Object} A deferred implementing the promise interface similar to the jqXHR created by jQuery.ajax
         @example
-        var myPipe = AeroGear.Pipeline( "tasks" ).pipes[ 0 ];
+        var myPipe = AeroGear.pipeline( "tasks" ).pipes[ 0 ];
 
         // Store a new task
         myPipe.save({
@@ -766,7 +518,7 @@ AeroGear.Core = function() {
         @param {Object|Array} [options.stores] - A single store object or array of stores to be updated when a server update is successful
         @returns {Object} A deferred implementing the promise interface similar to the jqXHR created by jQuery.ajax
         @example
-        var myPipe = AeroGear.Pipeline( "tasks" ).pipes[ 0 ];
+        var myPipe = AeroGear.pipeline( "tasks" ).pipes[ 0 ];
 
         // Store a new task
         myPipe.save({
@@ -792,7 +544,7 @@ AeroGear.Core = function() {
         myPipe.remove( toRemove );
 
         // Delete all remaining data from the server associated with this pipe
-        myPipe.remove();
+        myPipe.delete();
      */
     AeroGear.Pipeline.adapters.Rest.prototype.remove = function( toRemove, options ) {
         var that = this,
@@ -860,7 +612,7 @@ AeroGear.Core = function() {
 
         return AeroGear.ajax( this, $.extend( {}, ajaxSettings, extraOptions ) );
     };
-})( AeroGear, jQuery, uuid );
+})( AeroGear, jQuery );
 
 (function( AeroGear, $, undefined ) {
     /**
@@ -1019,7 +771,7 @@ AeroGear.Core = function() {
             data = data || [];
             if ( dataSync ) {
                 record[ "ag-sync-status" ] = AeroGear.DataManager.STATUS_NEW;
-                record.id = record.id || uuid();
+                record.id = record.id || uuid.v4();
             }
             data.push( record );
         };
@@ -1065,11 +817,6 @@ AeroGear.Core = function() {
         Read data from a store
         @param {String|Number} [id] - Usually a String or Number representing a single "record" in the data set or if no id is specified, all data is returned
         @returns {Array} Returns data from the store, optionally filtered by an id
-        @example
-        var dm = AeroGear.DataManager( "tasks" ).stores[ 0 ];
-
-        // Get an array of all data in the store
-        var allData = dm.read();
      */
     AeroGear.DataManager.adapters.Memory.prototype.read = function( id ) {
         var filter = {};
@@ -1082,20 +829,6 @@ AeroGear.Core = function() {
         @param {Object|Array} data - An object or array of objects representing the data to be saved to the server. When doing an update, one of the key/value pairs in the object to update must be the `recordId` you set during creation of the store representing the unique identifier for a "record" in the data set.
         @param {Boolean} [reset] - If true, this will empty the current data and set it to the data being saved
         @returns {Array} Returns the updated data from the store
-        @example
-        var dm = AeroGear.DataManager( "tasks" ).stores[ 0 ];
-
-        // Store a new task
-        dm.save({
-            title: "Created Task",
-            date: "2012-07-13",
-            ...
-        });
-
-        // Update an existing piece of data
-        var toUpdate = dm.read()[ 0 ];
-        toUpdate.data.title = "Updated Task";
-        dm.save( toUpdate );
      */
     AeroGear.DataManager.adapters.Memory.prototype.save = function( data, reset ) {
         var itemFound = false;
@@ -1132,34 +865,6 @@ AeroGear.Core = function() {
         Removes data from the store
         @param {String|Object|Array} toRemove - A variety of objects can be passed to remove to specify the item or if nothing is provided, all data is removed
         @returns {Array} Returns the updated data from the store
-        @example
-        var dm = AeroGear.DataManager( "tasks" ).stores[ 0 ];
-
-        // Store a new task
-        dm.save({
-            title: "Created Task"
-        });
-
-        // Store another new task
-        dm.save({
-            title: "Another Created Task"
-        });
-
-        // Store one more new task
-        dm.save({
-            title: "And Another Created Task"
-        });
-
-        // Remove a particular item from the store by its id
-        var toRemove = dm.read()[ 0 ];
-        dm.remove( toRemove.id );
-
-        // Remove an item from the store using the data object
-        toRemove = dm.read()[ 0 ];
-        dm.remove( toRemove );
-
-        // Delete all remaining data from the store
-        dm.remove();
      */
     AeroGear.DataManager.adapters.Memory.prototype.remove = function( toRemove ) {
         if ( !toRemove ) {
@@ -1199,18 +904,10 @@ AeroGear.Core = function() {
         @param {Object} [filterParameters] - An object containing key value pairs on which to filter the store's data. To filter a single parameter on multiple values, the value can be an object containing a data key with an Array of values to filter on and its own matchAny key that will override the global matchAny for that specific filter parameter.
         @param {Boolean} [matchAny] - When true, an item is included in the output if any of the filter parameters is matched.
         @returns {Array} Returns a filtered array of data objects based on the contents of the store's data object and the filter parameters. This method only returns a copy of the data and leaves the original data object intact.
-        @example
-        var dm = AeroGear.DataManager( "tasks" ).stores[ 0 ];
-
-        // An object can be passed to filter the data
-        var filteredData = dm.filter({
-            date: "2012-08-01"
-            ...
-        });
      */
     AeroGear.DataManager.adapters.Memory.prototype.filter = function( filterParameters, matchAny ) {
         var filtered,
-            key, j, k, l;
+            i, j, k;
 
         if ( !filterParameters ) {
             filtered = this.getData() || [];
@@ -1222,36 +919,26 @@ AeroGear.Core = function() {
                 keys = Object.keys( filterParameters ),
                 filterObj, paramMatch, paramResult;
 
-            for ( key = 0; key < keys.length; key++ ) {
-                if ( filterParameters[ keys[ key ] ].data ) {
+            for ( i = 0; i < keys.length; i++ ) {
+                if ( filterParameters[ keys[ i ] ].data ) {
                     // Parameter value is an object
-                    filterObj = filterParameters[ keys[ key ] ];
+                    filterObj = filterParameters[ keys[ i ] ];
                     paramResult = filterObj.matchAny ? false : true;
 
                     for ( j = 0; j < filterObj.data.length; j++ ) {
-                        if( AeroGear.isArray( value[ keys[ key ] ] ) ) {
-                            if(value[ keys [ key ] ].length ) {
+                        if( AeroGear.isArray( value[ keys[ i ] ] ) ) {
+                            if(value[ keys [ i ] ].length ) {
                                 if( $( value[ keys ] ).not( filterObj.data ).length === 0 && $( filterObj.data ).not( value[ keys ] ).length === 0 ) {
                                     paramResult = true;
                                     break;
                                 } else {
-                                    for( k = 0; k < value[ keys[ key ] ].length; k++ ) {
-                                        if ( filterObj.matchAny && filterObj.data[ j ] === value[ keys[ key ] ][ k ] ) {
+                                    for( k = 0; k < value[ keys[ i ] ].length; k++ ) {
+                                        if ( filterObj.matchAny && filterObj.data[ j ] === value[ keys[ i ] ][ k ] ) {
                                             // At least one value must match and this one does so return true
                                             paramResult = true;
-                                            if( matchAny ) {
-                                                break;
-                                            } else {
-                                                for( l = 0; l < value[ keys[ key ] ].length; l++ ) {
-                                                    if( !matchAny && filterObj.data[ j ] !== value[ keys[ key ] ][ l ] ) {
-                                                        // All must match but this one doesn't so return false
-                                                        paramResult = false;
-                                                        break;
-                                                    }
-                                                }
-                                            }
+                                            break;
                                         }
-                                        if ( !filterObj.matchAny && filterObj.data[ j ] !== value[ keys[ key ] ][ k ] ) {
+                                        if ( !filterObj.matchAny && filterObj.data[ j ] !== value[ keys[ i ] ][ k ] ) {
                                             // All must match but this one doesn't so return false
                                             paramResult = false;
                                             break;
@@ -1262,12 +949,12 @@ AeroGear.Core = function() {
                                 paramResult = false;
                             }
                         } else {
-                            if ( filterObj.matchAny && filterObj.data[ j ] === value[ keys[ key ] ] ) {
+                            if ( filterObj.matchAny && filterObj.data[ j ] === value[ keys[ i ] ] ) {
                                 // At least one value must match and this one does so return true
                                 paramResult = true;
                                 break;
                             }
-                            if ( !filterObj.matchAny && filterObj.data[ j ] !== value[ keys[ key ] ] ) {
+                            if ( !filterObj.matchAny && filterObj.data[ j ] !== value[ keys[ i ] ] ) {
                                 // All must match but this one doesn't so return false
                                 paramResult = false;
                                 break;
@@ -1276,17 +963,17 @@ AeroGear.Core = function() {
                     }
                 } else {
                     // Filter on parameter value
-                    if( AeroGear.isArray( value[ keys[ key ] ] ) ) {
+                    if( AeroGear.isArray( value[ keys[ i ] ] ) ) {
                         paramResult = matchAny ? false: true;
 
-                        if(value[ keys[ key ] ].length ) {
-                            for(j = 0; j < value[ keys[ key ] ].length; j++ ) {
-                                if( matchAny && filterParameters[ keys[ key ] ] === value[ keys[ key ] ][ j ]  ) {
+                        if(value[ keys[ i ] ].length ) {
+                            for(j = 0; j < value[ keys[ i ] ].length; j++ ) {
+                                if( matchAny && filterParameters[ keys[ i ] ] === value[ keys[ i ] ][ j ]  ) {
                                     //at least one must match and this one does so return true
                                     paramResult = true;
                                     break;
                                 }
-                                if( !matchAny && filterParameters[ keys[ key ] ] !== value[ keys[ key ] ][ j ] ) {
+                                if( !matchAny && filterParameters[ keys[ i ] ] !== value[ keys[ i ] ][ j ] ) {
                                     //All must match but this one doesn't so return false
                                     paramResult = false;
                                     break;
@@ -1296,7 +983,7 @@ AeroGear.Core = function() {
                             paramResult = false;
                         }
                     } else {
-                         paramResult = filterParameters[ keys[ key ] ] === value[ keys[ key ] ] ? true : false;
+                         paramResult = filterParameters[ keys[ i ] ] === value[ keys[ i ] ] ? true : false;
                     }
                 }
 
@@ -1317,7 +1004,7 @@ AeroGear.Core = function() {
 
         return filtered;
     };
-})( AeroGear, jQuery, uuid );
+})( AeroGear, jQuery, window.uuid );
 
 (function( AeroGear, $, undefined ) {
     /**
@@ -1505,12 +1192,6 @@ AeroGear.Core = function() {
         @param {Function} [options.error] - callback to be executed if the AJAX request results in an error
         @param {Function} [options.success] - callback to be executed if the AJAX request results in success
         @returns {Object} The jqXHR created by jQuery.ajax
-        @example
-        var auth = AeroGear.Auth( "userAuth" ).modules[ 0 ],
-            data = { userName: "user", password: "abc123", name: "John" };
-
-        // Enroll a new user
-        auth.enroll( data );
      */
     AeroGear.Auth.adapters.Rest.prototype.enroll = function( data, options ) {
         options = options || {};
@@ -1567,7 +1248,7 @@ AeroGear.Core = function() {
         if ( endpoints.enroll ) {
             url += endpoints.enroll;
         } else {
-            url += "auth/enroll";
+            url += "auth/register";
         }
         if ( url.length ) {
             extraOptions.url = url;
@@ -1586,12 +1267,6 @@ AeroGear.Core = function() {
         @param {Function} [options.error] - callback to be executed if the AJAX request results in an error
         @param {String} [options.success] - callback to be executed if the AJAX request results in success
         @returns {Object} The jqXHR created by jQuery.ajax
-        @example
-        var auth = AeroGear.Auth( "userAuth" ).modules[ 0 ],
-            data = { userName: "user", password: "abc123" };
-
-        // Enroll a new user
-        auth.login( data );
      */
     AeroGear.Auth.adapters.Rest.prototype.login = function( data, options ) {
         options = options || {};
@@ -1664,11 +1339,6 @@ AeroGear.Core = function() {
         @param {Function} [options.error] - callback to be executed if the AJAX request results in an error
         @param {String} [options.success] - callback to be executed if the AJAX request results in success
         @returns {Object} The jqXHR created by jQuery.ajax
-        @example
-        var auth = AeroGear.Auth( "userAuth" ).modules[ 0 ];
-
-        // Enroll a new user
-        auth.logout();
      */
     AeroGear.Auth.adapters.Rest.prototype.logout = function( options ) {
         options = options || {};

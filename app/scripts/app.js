@@ -1,19 +1,5 @@
 $( function() {
-    var url = "http://us.battle.net/api/wow/achievement/2",
-        baseURL = "http://us.battle.net/api/wow/";
-
-//a jquery version for a baseline to make sure it worked
-    /*$.ajax( {
-        type:'GET',
-        url:url,
-        contentType: 'application/json',
-        dataType: 'jsonp',
-        jsonp: 'jsonp',
-        jsonpCallback: 'customCallback',
-        success: function( data ){
-            console.log( data );
-        }
-    });*/
+    var baseURL = "http://us.battle.net/api/wow/";
 
     var pipeline = AeroGear.Pipeline();
     var stores = AeroGear.DataManager();
@@ -23,11 +9,7 @@ $( function() {
             name: "realmStatus",
             settings: {
                 baseURL: baseURL,
-                endpoint: "realm/status",
-                jsonp: {
-                    jsonp: 'jsonp'
-                    //callback: 'customCallback'
-                }
+                endpoint: "realm/status"
             }
         }
     ]);
@@ -44,8 +26,10 @@ $( function() {
             name: "pvpStatusStore"
         }
     ]);
-    var realmStatusStore = stores.stores.realmStatusStore;
-    var pvpStatusStore = stores.stores.pvpStatusStore;
+
+    var realmStatusStore = stores.stores.realmStatusStore,
+        pvpStatusStore = stores.stores.pvpStatusStore;
+
     readPipe();
 
     $( "ul#realms" ).on( "click", buildDetails );
@@ -67,6 +51,9 @@ $( function() {
             },
             error:function( data ) {
                 console.log( data );
+            },
+            jsonp: {
+                callback: "jsonp"
             },
             stores: realmStatusStore
         });
