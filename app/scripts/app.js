@@ -1,5 +1,6 @@
 $( function() {
-    var baseURL = "http://us.battle.net/api/wow/";
+    //var baseURL = "http://us.battle.net/api/wow/";
+    var baseURL = "http://crossdomain-lholmqui.rhcloud.com/";
 
     var pipeline = AeroGear.Pipeline();
     var stores = AeroGear.DataManager();
@@ -52,9 +53,7 @@ $( function() {
             error:function( data ) {
                 console.log( data );
             },
-            jsonp: {
-                callback: "jsonp"
-            },
+            jsonp: false, //set to true to use jsonp , DUH
             stores: realmStatusStore
         });
     }
