@@ -1,6 +1,6 @@
 $( function() {
-    //var baseURL = "http://us.battle.net/api/wow/";
-    var baseURL = "http://crossdomain-lholmqui.rhcloud.com/api/wow/";
+    var baseURL = "http://us.battle.net/api/wow/";
+    //var baseURL = "http://crossdomain-lholmqui.rhcloud.com/api/wow/";
     //var baseURL = "http://localhost:8080/api/wow/";
 
     var pipeline = AeroGear.Pipeline();
@@ -17,6 +17,8 @@ $( function() {
     ]);
 
     var realmStatusPipe = pipeline.pipes.realmStatus;
+
+
     stores.add( [
         {
             name: "realmStatusStore",
@@ -48,14 +50,16 @@ $( function() {
         $.mobile.loading( "show" );
         realmStatusPipe.read( {
             success:function( data ) {
+                realmStatusStore.save( data );
                 updateRealmStatus();
                 $.mobile.loading( "hide" );
             },
             error:function( data ) {
                 console.log( data );
             },
-            jsonp: true, //set to true to use jsonp , DUH
-            stores: realmStatusStore
+            jsonp: {
+                callback: "jsonp"
+            } //set to true to use jsonp , DUH
         });
     }
 
