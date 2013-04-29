@@ -50,7 +50,7 @@ $( function() {
         $.mobile.loading( "show" );
         realmStatusPipe.read( {
             success:function( data ) {
-                realmStatusStore.save( data );
+                realmStatusStore.save( data, true );
                 updateRealmStatus();
                 $.mobile.loading( "hide" );
             },
@@ -66,7 +66,7 @@ $( function() {
     function updateRealmStatus() {
         realmStatusStore.save(realmStatusStore.read()[ 0 ].realms,true);
         //did the above because datamanger can't filter beyond one layer yet
-        var outsideList = $( "#realms" );
+        var outsideList = $( "#realms" ).empty();
         _.each( realmStatusStore.read(), function( realm ) {
             buildTable( realm ).appendTo( outsideList );
         });
