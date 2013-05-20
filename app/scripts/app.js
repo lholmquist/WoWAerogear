@@ -1,5 +1,5 @@
 $( function() {
-    var baseURL = "http://us.battle.net/api/wow/";
+    var baseURL = "https://us.battle.net/api/wow/";
     //var baseURL = "http://crossdomain-lholmqui.rhcloud.com/api/wow/";
     //var baseURL = "http://localhost:8080/api/wow/";
 
@@ -56,10 +56,10 @@ $( function() {
             },
             error:function( data ) {
                 console.log( data );
-            },
-            jsonp: {
-                callback: "jsonp"
-            } //set to true to use jsonp , DUH
+            }//,
+            //jsonp: {
+            //    callback: "jsonp"
+            //} //set to true to use jsonp , DUH
         });
     }
 
